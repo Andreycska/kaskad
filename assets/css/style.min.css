@@ -4954,6 +4954,10 @@ body {
   margin-right: auto;
   overflow: hidden; }
 
+.swiper-container-free-mode >
+.swiper-wrapper {
+  transition-timing-function: linear; }
+
 .swiper-slide {
   text-align: center;
   font-size: 1.8rem;
