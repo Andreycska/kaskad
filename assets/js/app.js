@@ -1211,6 +1211,17 @@ eval("console.log('file 1');\r\n\n\n//# sourceURL=webpack:///./src/assets/js/app
 
 /***/ }),
 
+/***/ "./src/assets/js/burger.js":
+/*!*********************************!*\
+  !*** ./src/assets/js/burger.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("let nav = document.getElementById('nav')\n\nconst burger = document.getElementById('sidebarToggle');\nconst sidebar = document.getElementById('sidebar');\nconst page = document.getElementById('page');\nconst body = document.body;\n\nburger.addEventListener('click', event => {\n    if(body.classList.contains('show-sidebar')) {\n        closeSidebar();\n    } else {\n        showSidebar();\n    }\n});\n\nfunction showSidebar() {\n    let mask = document.createElement('div');\n    mask.classList.add('page__mask');\n    mask.addEventListener('click', closeSidebar);\n    page.appendChild(mask);\n    body.classList.add('show-sidebar');\n    nav.classList.add('show');\n}\n\nfunction closeSidebar() {\n    body.classList.remove('show-sidebar');\n    nav.classList.remove('show');\n    document.querySelector('.page__mask').remove();\n}\n\n//# sourceURL=webpack:///./src/assets/js/burger.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/contact.js":
 /*!**********************************!*\
   !*** ./src/assets/js/contact.js ***!
@@ -1280,13 +1291,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./src/assets/js/acordion.js ./src/assets/js/app.js ./src/assets/js/contact.js ./src/assets/js/file2.js ./src/assets/js/lightbox.js ./src/assets/js/map.js ./src/assets/js/phoneinput.js ./src/assets/js/swiper.js ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./src/assets/js/acordion.js ./src/assets/js/app.js ./src/assets/js/burger.js ./src/assets/js/contact.js ./src/assets/js/file2.js ./src/assets/js/lightbox.js ./src/assets/js/map.js ./src/assets/js/phoneinput.js ./src/assets/js/swiper.js ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/acordion.js */\"./src/assets/js/acordion.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/contact.js */\"./src/assets/js/contact.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/file2.js */\"./src/assets/js/file2.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/lightbox.js */\"./src/assets/js/lightbox.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/map.js */\"./src/assets/js/map.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/phoneinput.js */\"./src/assets/js/phoneinput.js\");\nmodule.exports = __webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/swiper.js */\"./src/assets/js/swiper.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/acordion.js_./src/assets/js/app.js_./src/assets/js/contact.js_./src/assets/js/file2.js_./src/assets/js/lightbox.js_./src/assets/js/map.js_./src/assets/js/phoneinput.js_./src/assets/js/swiper.js?");
+eval("__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/acordion.js */\"./src/assets/js/acordion.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/burger.js */\"./src/assets/js/burger.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/contact.js */\"./src/assets/js/contact.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/file2.js */\"./src/assets/js/file2.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/lightbox.js */\"./src/assets/js/lightbox.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/map.js */\"./src/assets/js/map.js\");\n__webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/phoneinput.js */\"./src/assets/js/phoneinput.js\");\nmodule.exports = __webpack_require__(/*! /Volumes/MAC 4/www/kaskad/src/assets/js/swiper.js */\"./src/assets/js/swiper.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/acordion.js_./src/assets/js/app.js_./src/assets/js/burger.js_./src/assets/js/contact.js_./src/assets/js/file2.js_./src/assets/js/lightbox.js_./src/assets/js/map.js_./src/assets/js/phoneinput.js_./src/assets/js/swiper.js?");
 
 /***/ })
 
