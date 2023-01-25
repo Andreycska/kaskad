@@ -6496,7 +6496,6 @@ body.show-sidebar {
 
 @media (max-width: 768px) {
     .nav {
-        display: none;
         width: 100%;
         height: auto;
         min-height: calc(100vh - 8rem);
@@ -6518,7 +6517,6 @@ body.show-sidebar {
     }
 
     .nav.show {
-        display: block;
         font-size: 25px;
         -webkit-transform: translateX(0);
         transform: translateX(0);
